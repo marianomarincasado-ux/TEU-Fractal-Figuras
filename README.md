@@ -40,6 +40,34 @@ El script en Python no resuelve la integral infinita de Feynman por fuerza bruta
 
 ![Nube Cuántica](img/figura3_propagador_feynman_english.png)
 
+# Visualización 2: Nube Cuántica y el Origen de la Masa ($|\Psi|^2$)
+
+Este apartado del repositorio presenta la simulación de densidad `simulacion_nube_cuantica.py`. Esta simulación visualiza la consecuencia macroscópica directa de las trayectorias fractales generadas por el modelo TEU.
+
+![Densidad de Probabilidad Cuántica](img/figura3_nube_cuantica_high_res.png)
+
+## Las Matemáticas de la Masa: Confinamiento por Sub-difusión
+
+Mientras que la mecánica cuántica canónica y la Ecuación de Schrödinger asumen un espaciotiempo liso, el universo TEU postula que el espacio subatómico está gobernado por una red métrica de Cantor. Esto tiene una consecuencia cinemática ineludible: la **Difusión Anómala**.
+
+
+
+### 1. El Vínculo Topología-Cinemática
+Como se demostró en el modelo TEU, la interacción analítica del Electromagnetismo genera una "fricción" en el operador Laplaciano denominada **Rigidez Geométrica ($K_{geo}$)**. En la teoría del transporte estocástico, la dificultad para atravesar esta geometría define la dimensión de la caminata, la cual fija el **Exponente de Hurst ($H$)**:
+
+$$H = \frac{1}{K_{geo}} = \frac{1}{2.659} \approx 0.376$$
+
+### 2. Ecuación de Varianza de la Posición
+En un vacío estándar de Minkowski (donde $H = 0.5$), un paquete de ondas sin masa se difunde libremente, y su Desplazamiento Cuadrático Medio (MSD) crece linealmente con el tiempo ($\langle x^2 \rangle \propto t$).
+
+Sin embargo, dado que el modelo TEU arroja $H < 0.5$, el electrón entra en un régimen de **Sub-difusión Fuerte** o comportamiento *anti-persistente*. La ecuación que gobierna la propagación de este paquete es:
+
+$$\langle x^2(t) \rangle \propto t^{2H} \approx t^{0.75}$$
+
+### ¿Qué hace el script en Python?
+El script genera $5000$ caminos estocásticos de memoria larga y calcula su campo de densidad probabilística global ($|\Psi|^2$) a través de un histograma suavizado 2D. 
+
+**Interpretación Física:** Al crecer la varianza con un exponente menor a 1 ($\approx 0.75$), las partículas colisionan estadísticamente contra la "Escalera del Diablo" métrica y son empujadas hacia atrás, rellenando el espacio localmente. Esta trampa topológica crea un núcleo negro ultra-denso en el centro de la simulación. La resistencia intrínseca a propagarse libremente inducida por esta sub-difusión es precisamente lo que nosotros medimos fenotípicamente como **Masa Inercial**.
 
 
 ## Uso
