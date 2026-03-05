@@ -37,11 +37,12 @@ El script en Python no resuelve la integral infinita de Feynman por fuerza bruta
 
 **Este confinamiento geométrico es el fenómeno macroscópico que nosotros medimos empíricamente como Masa Inercial.**
 
+
+![Nube Cuántica](img/figura3_propagador_feynman_english.png)
+
+
+
 ## Uso
 Simplemente ejecuta el script de Python para generar los gráficos en alta resolución (PDF/PNG) de la nube cuántica:
 ```bash
 python fractal_propagator_sim.py
-
-
-![Nube Cuántica](img/figura3_propagador_feynman_english.png)
-
