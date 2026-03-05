@@ -38,9 +38,9 @@ El script en Python no resuelve la integral infinita de Feynman por fuerza bruta
 **Este confinamiento geométrico es el fenómeno macroscópico que nosotros medimos empíricamente como Masa Inercial.**
 
 
-![Nube Cuántica](img/figura3_propagador_feynman_english.png)
+![Nube Cuántica](img/figura3_nube_cuantica_high_res 2.png)
 
-# Visualización 2: Nube Cuántica y el Origen de la Masa ($|\Psi|^2$)
+# figura3_nube_cuantica_high_res 2.pngVisualización 2: Nube Cuántica y el Origen de la Masa ($|\Psi|^2$)
 
 Este apartado del repositorio presenta la simulación de densidad `simulacion_nube_cuantica.py`. Esta simulación visualiza la consecuencia macroscópica directa de las trayectorias fractales generadas por el modelo TEU.
 
