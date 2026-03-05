@@ -1,3 +1,10 @@
+# TEU - FRACTAL FIGURES .
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18807956.svg)](https://doi.org/10.5281/zenodo.18807956)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Physics](https://img.shields.io/badge/Physics-QED%20%7C%20Quantum%20Gravity-purple)
+![Status](https://img.shields.io/badge/Status-Research%20Preprint-success)
+
 # Visualizaciones del Propagador Fractal TEU 🌌
 
 Este repositorio contiene scripts de simulación auxiliares y visualizaciones matemáticas para el modelo **Topological Electron Universe (TEU)**. 
