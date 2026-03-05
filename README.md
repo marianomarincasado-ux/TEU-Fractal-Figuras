@@ -4,8 +4,7 @@ Este repositorio contiene scripts de simulación auxiliares y visualizaciones ma
 
 Mientras que los cálculos analíticos duros de la QED se alojan en el repositorio principal TEU, este espacio está dedicado a explorar la naturaleza estocástica y geométrica del vacío cuántico, centrándose específicamente en cómo las topologías fractales generan la masa inercial a través de sub-difusión anómala.
 
-![Nube Cuántica TEU](/img/figura3_propagador_feynman_english.pdf
-figura3_propagador_feynman_english.png)
+![Nube Cuántica TEU](/img/figura3_propagador_feynman_english.png)
 
 ## La Física: Simulando el *Mass Gap* (Génesis de la Masa)
 
