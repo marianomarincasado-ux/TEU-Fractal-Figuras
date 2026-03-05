@@ -1,0 +1,43 @@
+# TEU Fractal Propagator Visualizations 🌌
+
+This repository contains auxiliary simulation scripts and mathematical visualizations for the **Topological Electron Universe (TEU)** model. 
+
+While the core QED calculations are hosted in the main TEU repository, this space is dedicated to exploring the stochastic and geometric nature of the quantum vacuum, specifically focusing on how fractal topologies generate inertial mass through anomalous sub-diffusion.
+
+
+
+## The Physics: Simulating the Mass Gap
+
+The script `fractal_propagator_sim.py` visually demonstrates the emergence of the electron's mass without relying on external scalar fields (like the Higgs mechanism). It achieves this by simulating the **Fractal Feynman Path Integral**.
+
+### 1. The Golmankhaneh Fractal Propagator ($K_F^\alpha$)
+In standard Quantum Mechanics, particles explore all possible paths in a smooth Euclidean space. However, based on the $F^\alpha$-Calculus formulation for quantum mechanics over non-differentiable curves (Golmankhaneh & Baleanu, 2013), the probability amplitude (Propagator $K_F^\alpha$) for a particle to move through a Cantor-like vacuum is given by:
+
+$$K_{F}^{\alpha} = \int \mathcal{D}_{F}^{\alpha} \mathbf{w} \, \exp\left(\frac{i}{\hbar} \mathcal{S}_{fractal}\right)$$
+
+Here, the integration is performed over the fractal measure $\mathcal{D}_F^\alpha$, and $\mathcal{S}_{fractal}$ is the modified quantum action.
+
+### 2. The TEU Geometric Stiffness ($K_{geo}$)
+How does the TEU model map to this propagator? In the TEU framework, the Euclidean Laplacian is projected onto the fractal manifold, generating an intrinsic spatial impedance known as **Geometric Stiffness ($K_{geo}$)**. 
+
+Analytically derived from the QED anomalous magnetic moment ($g-2$), the TEU vacuum possesses a stiffness of:
+$$K_{geo} \approx 2.659$$
+
+### 3. The Bridge: The Hurst Exponent ($H$)
+To simulate this analytically derived action ($\mathcal{S}_{fractal}$) using Monte Carlo stochastic methods, we translate the geometric stiffness into a random walk dimension ($d_w$). The corresponding **Hurst Exponent ($H$)** is simply the inverse of this stiffness:
+
+$$H = \frac{1}{K_{geo}} \approx 0.375$$
+
+### How the Code Works (Spectral Synthesis)
+The Python script does not solve the infinite Feynman integral brute-force. Instead, it simulates the phenomenological outcome using **Fractional Gaussian Noise (fGn)** via Spectral Synthesis:
+
+1. A standard Minkowski vacuum has no topological friction ($K_{geo}=2 \implies H=0.5$), resulting in normal white noise. The particle diffuses freely.
+2. By injecting the TEU parameter ($H = 0.375$) into the power spectrum $S(f) \propto f^{-(1-2H)}$, the algorithm forces the Fourier frequencies to generate negatively correlated steps (Anti-persistence).
+3. **The Result:** The simulated quantum wave packet ($|\Psi|^2$) cannot spread freely. It continuously folds back on itself due to the topological gaps (Cantor dust), creating a dense, localized probability core.
+
+**This geometric confinement is the macroscopic phenomenon we measure as Inertial Mass.**
+
+## Usage
+Simply run the Python script to generate the high-resolution PDF plots of the quantum cloud:
+```bash
+python fractal_propagator_sim.py
