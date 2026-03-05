@@ -159,7 +159,7 @@ The solid black line is the exact representation of the electron's **Accumulated
 ### Physical Interpretation
 The plot visually demonstrates the "Lacunarity" of the universe. The mass of the electron is not a continuous substance, but the integrated sum of infinite spacetime islands (the gray zones) separated by topological abysses (the white zones). The stochastic resistance (diffusion) to crossing this "barcode" is the origin of quantum inertia.
 
-# Visualization 4: The 4D Hyperspace Dashboard (VEGAS Integration) 🖥️
+# Visualization 4: The 4D Hyperspace Dashboard (VEGAS Integration) 
 
 This repository also includes the script `teu_vegas_dashboard.py`, which generates a control-panel visualization of the topological mathematical kernel used to calculate the electron's mass *ab initio*.
 
