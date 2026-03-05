@@ -123,6 +123,42 @@ $$\langle x^2(t) \rangle \propto t^{2H} \approx t^{0.75}$$
 **Conclusión:** Esta incapacidad puramente geométrica de propagarse libremente a la velocidad de la luz es el fenómeno fenomenológico que medimos macroscópicamente como **Masa Inercial**.
 
 ---
+# Visualización 3: Topología Interna del Electrón (El "Código de Barras" TEU) 📊
+
+Este repositorio contiene el script `teu_barcode_plot.py`, el cual genera una tomografía transversal del espacio cuántico ocupado por un electrón según el modelo **Topological Electron Universe (TEU)**. 
+
+Lejos de ser una esfera sólida de carga, el electrón TEU es una estructura matemática discontinua. Esta gráfica ilustra la competencia directa entre el "vacío" y la "masa".
+
+![Topología de Código de Barras del Electrón](img/TEU_Topology_Barcode.png)
+
+## Las Matemáticas detrás de la Imagen
+
+La imagen superpone dos elementos matemáticos fundamentales: el **Polvo de Cantor** (las franjas de fondo) y la **Función Escalera del Diablo** (la curva de acumulación de masa).
+
+### 1. El Ratio de Vacío (Gap Ratio)
+En la teoría clásica, la masa inercial de una partícula se acumula de forma continua (representado por la línea punteada euclídea). En el modelo TEU, el espacio está perforado. 
+
+Para que la geometría satisfaga la dimensión fractal predicha por el electromagnetismo ($\mu \approx 0.7576$), el tamaño relativo de las lagunas de vacío (las franjas blancas) no puede ser arbitrario. El script calcula el tamaño exacto del hueco central iterativo despejando el ratio a partir de la ecuación dimensional de los conjuntos de Cantor simétricos:
+
+$$2 \left( \frac{1 - \text{Gap Ratio}}{2} \right)^\mu = 1$$
+
+Al despejar, el código obtiene la relación constitutiva del vacío:
+$$\text{Gap Ratio} = 1 - 2^{1 - 1/\mu}$$
+
+Con $\mu \approx 0.7576$, esto nos dice que en cada nivel de resolución espacial, una fracción matemáticamente exacta del espacio desaparece, formando las "bandas blancas" de nuestro código de barras.
+
+### 2. La Escalera del Diablo (Mass Function)
+La línea negra continua es la representación exacta de la **Masa Acumulada** del electrón (hasta llegar a su valor CODATA de $\approx 9.109 \times 10^{-31}$ kg). 
+* **Zonas Grises (Masa):** En estas regiones existe soporte topológico. El espacio es denso y la curva negra sube, acumulando inercia.
+* **Zonas Blancas (Vacío/Lagunas):** En estas zonas no hay espaciotiempo subyacente. La curva negra se vuelve completamente plana (derivada nula). El paquete de ondas salta cuánticamente sobre este abismo sin acumular masa.
+
+### Interpretación Física
+La gráfica demuestra visualmente la "Lagunaridad" del universo. La masa del electrón no es una sustancia continua, sino la suma integrada de infinitas islas de espaciotiempo (las zonas grises) separadas por abismos topológicos (las zonas blancas). La resistencia estocástica (difusión) a cruzar este "código de barras" es el origen de la inercia cuántica.
+
+## Uso del Script
+El código está optimizado para su ejecución en entornos estándar de Python con `matplotlib`.
+```bash
+python teu_barcode_plot.py
 
 ## Uso del Script
 
