@@ -76,7 +76,60 @@ El script genera $5000$ caminos estocásticos de memoria larga y calcula su camp
 
 **Interpretación Física:** Al crecer la varianza con un exponente menor a 1 ($\approx 0.75$), las partículas colisionan estadísticamente contra la "Escalera del Diablo" métrica y son empujadas hacia atrás, rellenando el espacio localmente. Esta trampa topológica crea un núcleo negro ultra-denso en el centro de la simulación. La resistencia intrínseca a propagarse libremente inducida por esta sub-difusión es precisamente lo que nosotros medimos fenotípicamente como **Masa Inercial**.
 
+# Fundamentos Geométricos del Modelo TEU 🌌
 
+Este repositorio complementario aloja los scripts en Python responsables de generar las representaciones gráficas fundamentales del marco **Topological Electron Universe (TEU)**. 
+
+A través de estos algoritmos, materializamos visualmente dos conceptos críticos del modelo: la topología del vacío cuántico (la Escalera de Cantor) y su cinemática resultante (el confinamiento sub-difusivo del electrón).
+
+---
+
+## 1. La Topología del Vacío: La Métrica de Cantor ($S_F^\mu$)
+
+La primera gráfica generada ilustra la diferencia fundamental entre el espacio asumido por la física ortodoxa y el postulado por el modelo TEU.
+
+![Métrica Fractal TEU](img/figura1_staircase.png)
+
+### Matemáticas subyacentes
+La Teoría Cuántica de Campos (TQC) canónica asume que el universo es una variedad euclídea lisa ($\mu=1$), donde la distancia crece de forma lineal y continua (línea punteada). 
+
+El modelo TEU postula que, a escala cuántica, el espacio es un conjunto fractal lagunar (Polvo de Cantor). Basándonos en el formalismo del $F^\alpha$-Cálculo de Parvate y Gangal, la "distancia real" experimentada por un paquete de ondas viene descrita por la Función de Masa Fractal $S_F^\mu(x)$:
+
+$$S_F^\mu(x) \approx \frac{x^\mu}{\Gamma(\mu+1)} [1 + A \sin(k \ln x)]$$
+
+* **Dimensión Efectiva ($\mu \approx 0.7575$):** Dicta la tendencia asintótica global. Al ser menor que 1, el volumen métrico real es estrictamente menor que el euclídeo.
+* **Lacunaridad ($A \approx 0.5974$):** Genera la firma log-periódica (los escalones). El área rayada representa la "masa faltante" o los poros del espaciotiempo por donde la onda cuántica no puede propagarse.
+
+---
+
+## 2. Cinemática Topológica: La Génesis de la Inercia
+
+La segunda gráfica revela qué le ocurre a una partícula cuántica cuando intenta moverse a través de esa geometría lagunar (la "Escalera del Diablo" de la gráfica anterior).
+
+![Difusión Anómala TEU](img/figura2_diffusion.png)
+
+### Matemáticas subyacentes
+La rugosidad espacial altera el operador Laplaciano en la Ecuación de Schrödinger, generando una impedancia denominada **Rigidez Geométrica ($K_{geo}$)**. En la teoría de transporte, esta rigidez equivale a la dimensión de la caminata aleatoria ($d_w \approx 2.66$).
+
+Mediante la simulación estocástica de Síntesis Espectral de Fourier, el script traduce esta rigidez topológica en un **Exponente de Hurst ($H$)**:
+
+$$H = \frac{1}{K_{geo}} = \frac{1}{2.6605} \approx 0.375$$
+
+Al ser $H < 0.5$, la partícula entra en un régimen estocástico **Anti-persistente** (Sub-difusión Fuerte). La trayectoria generada visualiza cómo el electrón "choca" estadísticamente contra los saltos del fractal, viéndose forzado a retroceder y rellenar el espacio localmente en lugar de viajar en línea recta.
+
+La ecuación que gobierna esta trampa espacial es:
+$$\langle x^2(t) \rangle \propto t^{2H} \approx t^{0.75}$$
+
+**Conclusión:** Esta incapacidad puramente geométrica de propagarse libremente a la velocidad de la luz es el fenómeno fenomenológico que medimos macroscópicamente como **Masa Inercial**.
+
+---
+
+## Uso del Script
+
+El código utiliza `matplotlib` estándar y `scipy`. Para generar los PDF vectorizados (para publicación) y los PNG en alta resolución (300 dpi):
+
+```bash
+python generate_scientific_plots.py
 ## Uso
 Simplemente ejecuta el script de Python para generar los gráficos en alta resolución (PDF/PNG) de la nube cuántica:
 ```bash
