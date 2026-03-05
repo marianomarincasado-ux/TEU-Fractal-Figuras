@@ -155,6 +155,21 @@ La línea negra continua es la representación exacta de la **Masa Acumulada** d
 ### Interpretación Física
 La gráfica demuestra visualmente la "Lagunaridad" del universo. La masa del electrón no es una sustancia continua, sino la suma integrada de infinitas islas de espaciotiempo (las zonas grises) separadas por abismos topológicos (las zonas blancas). La resistencia estocástica (difusión) a cruzar este "código de barras" es el origen de la inercia cuántica.
 
+# Visualización 4: El Dashboard del Hiperespacio 4D (Integración VEGAS) 🖥️
+
+Este repositorio también incluye el script `teu_vegas_dashboard.py`, el cual genera una visualización tipo panel de control del kernel matemático topológico utilizado para calcular la masa del electrón *ab initio*.
+
+![Dashboard VEGAS TEU](img/TEU_VEGAS_Dashboard.png)
+
+## ¿Qué estamos viendo en esta gráfica?
+
+Para extraer la masa inercial del electrón a partir del vacío cuántico, el repositorio principal TEU emplea el **Integrador Monte Carlo VEGAS** a través de un hiperespacio de 4 dimensiones. Este dashboard visualiza el integrando (el "paisaje de fricción") por el que navega el algoritmo VEGAS:
+
+1. **Panel Izquierdo (Corte Transversal):** Una sección 2D del espacio euclídeo 4D. El núcleo brillante de magma muestra la extrema densidad topológica cerca del origen, demostrando cómo la métrica lagunar de Cantor altera drásticamente el comportamiento del espaciotiempo antes de llegar al límite de Planck (*Planck cutoff*).
+2. **Panel Superior Derecho (Resonancia de Moiré):** Un perfil radial del integrando. Las oscilaciones log-periódicas (Polvo de Cantor) generan una "Resonancia de Moiré" en la amplitud, lo que hace imposible la integración analítica canónica y hace imprescindible el uso de métodos estocásticos avanzados (VEGAS).
+3. **Panel Inferior Derecho (Cascada de Masa):** Muestra el resultado fenomenológico de la integración. La resistencia topológica calculada por VEGAS actúa como un implacable filtro exponencial, atenuando la Masa Desnuda de Planck ($M_P$) en 23 órdenes de magnitud hasta que emerge macroscópicamente como la masa empírica del Electrón ($m_e$).
+
+
 ## Uso del Script
 El código está optimizado para su ejecución en entornos estándar de Python con `matplotlib`.
 ```bash
