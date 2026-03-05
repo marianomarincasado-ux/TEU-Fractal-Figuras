@@ -5,7 +5,7 @@
 ![Physics](https://img.shields.io/badge/Physics-QED%20%7C%20Quantum%20Gravity-purple)
 ![Status](https://img.shields.io/badge/Status-Research%20Preprint-success)
 
-# Visualizaciones del Propagador Fractal TEU 🌌
+# Visualizaciones del Propagador Fractal TEU 
 
 Este repositorio contiene scripts de simulación auxiliares y visualizaciones matemáticas para el modelo **Topological Electron Universe (TEU)**. 
 
@@ -76,7 +76,7 @@ El script genera $5000$ caminos estocásticos de memoria larga y calcula su camp
 
 **Interpretación Física:** Al crecer la varianza con un exponente menor a 1 ($\approx 0.75$), las partículas colisionan estadísticamente contra la "Escalera del Diablo" métrica y son empujadas hacia atrás, rellenando el espacio localmente. Esta trampa topológica crea un núcleo negro ultra-denso en el centro de la simulación. La resistencia intrínseca a propagarse libremente inducida por esta sub-difusión es precisamente lo que nosotros medimos fenotípicamente como **Masa Inercial**.
 
-# Fundamentos Geométricos del Modelo TEU 🌌
+# Fundamentos Geométricos del Modelo TEU 
 
 Este repositorio complementario aloja los scripts en Python responsables de generar las representaciones gráficas fundamentales del marco **Topological Electron Universe (TEU)**. 
 
@@ -123,7 +123,7 @@ $$\langle x^2(t) \rangle \propto t^{2H} \approx t^{0.75}$$
 **Conclusión:** Esta incapacidad puramente geométrica de propagarse libremente a la velocidad de la luz es el fenómeno fenomenológico que medimos macroscópicamente como **Masa Inercial**.
 
 ---
-# Visualización 3: Topología Interna del Electrón (El "Código de Barras" TEU) 📊
+# Visualización 3: Topología Interna del Electrón (El "Código de Barras" TEU) 
 
 Este repositorio contiene el script `teu_barcode_plot.py`, el cual genera una tomografía transversal del espacio cuántico ocupado por un electrón según el modelo **Topological Electron Universe (TEU)**. 
 
@@ -155,7 +155,7 @@ La línea negra continua es la representación exacta de la **Masa Acumulada** d
 ### Interpretación Física
 La gráfica demuestra visualmente la "Lagunaridad" del universo. La masa del electrón no es una sustancia continua, sino la suma integrada de infinitas islas de espaciotiempo (las zonas grises) separadas por abismos topológicos (las zonas blancas). La resistencia estocástica (difusión) a cruzar este "código de barras" es el origen de la inercia cuántica.
 
-# Visualización 4: El Dashboard del Hiperespacio 4D (Integración VEGAS) 🖥️
+# Visualización 4: El Dashboard del Hiperespacio 4D (Integración VEGAS) 
 
 Este repositorio también incluye el script `teu_vegas_dashboard.py`, el cual genera una visualización tipo panel de control del kernel matemático topológico utilizado para calcular la masa del electrón *ab initio*.
 
