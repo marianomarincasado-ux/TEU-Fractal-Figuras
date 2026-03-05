@@ -5,7 +5,7 @@
 ![Physics](https://img.shields.io/badge/Physics-QED%20%7C%20Quantum%20Gravity-purple)
 ![Status](https://img.shields.io/badge/Status-Research%20Preprint-success)
 
-# TEU Fractal Propagator Visualizations 🌌
+# TEU Fractal Propagator Visualizations 
 
 This repository contains auxiliary simulation scripts and mathematical visualizations for the **Topological Electron Universe (TEU)** model. 
 
@@ -81,7 +81,7 @@ The script generates $5000$ long-memory stochastic paths and calculates their gl
 
 ---
 
-# Geometric Foundations of the TEU Model 🌌
+# Geometric Foundations of the TEU Model 
 
 This complementary section hosts the Python scripts responsible for generating the fundamental graphical representations of the **Topological Electron Universe (TEU)** framework. 
 
@@ -127,7 +127,7 @@ $$\langle x^2(t) \rangle \propto t^{2H} \approx t^{0.75}$$
 
 ---
 
-# Visualization 3: Internal Topology of the Electron (The TEU "Barcode") 📊
+# Visualization 3: Internal Topology of the Electron (The TEU "Barcode") 
 
 This repository contains the script `teu_barcode_plot.py`, which generates a cross-sectional tomography of the quantum space occupied by an electron according to the **Topological Electron Universe (TEU)** model. 
 
@@ -159,6 +159,19 @@ The solid black line is the exact representation of the electron's **Accumulated
 ### Physical Interpretation
 The plot visually demonstrates the "Lacunarity" of the universe. The mass of the electron is not a continuous substance, but the integrated sum of infinite spacetime islands (the gray zones) separated by topological abysses (the white zones). The stochastic resistance (diffusion) to crossing this "barcode" is the origin of quantum inertia.
 
+# Visualization 4: The 4D Hyperspace Dashboard (VEGAS Integration) 🖥️
+
+This repository also includes the script `teu_vegas_dashboard.py`, which generates a control-panel visualization of the topological mathematical kernel used to calculate the electron's mass *ab initio*.
+
+![TEU VEGAS Dashboard](img/TEU_VEGAS_Dashboard.png)
+
+## What are we looking at?
+
+To extract the electron's mass from the vacuum, the main TEU repository employs the **VEGAS Monte Carlo Integrator** across a 4-dimensional hyperspace. This dashboard visualizes the integrand (the "friction landscape") that VEGAS navigates:
+
+1. **Left Panel (Cross-Section):** A 2D slice of the 4D Euclidean space. The bright magma core shows the extreme topological density near the origin, demonstrating how the Cantor metric drastically alters the behavior of spacetime before the Planck cutoff.
+2. **Top-Right Panel (Moiré Resonance):** A radial profile of the integrand. The log-periodic oscillations (Cantor Dust) generate a "Moiré Resonance" in the amplitude, making standard analytical integration impossible and necessitating stochastic methods (VEGAS).
+3. **Bottom-Right Panel (Mass Cascade):** Shows the phenomenological result of the integration. The topological resistance computed by VEGAS acts as an exponential filter, dampening the bare Planck Mass ($M_P$) by 23 orders of magnitude until it emerges macroscopically as the empirical Electron Mass ($m_e$).
 ---
 
 ## Script Usage & Reproduction
